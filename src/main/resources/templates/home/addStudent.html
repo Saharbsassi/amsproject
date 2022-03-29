@@ -1,0 +1,43 @@
+
+<head>
+<Meta charset="utf-_"/8>
+<title>Spring</title>
+<!-- link rel="stylesheet" href="/css/bootstrap.min.css"-->
+<link rel="stylesheet" th:href="@{css/bootstrap.min.css}"/>
+<link rel="stylesheet" th:href="@{/main.css}"/>
+</head>
+<body>
+<center><img th:src="@{images/téléchargement.png}" width="20%">
+<h1 align="center">Ajout d'un nouvel étudiant</h1>
+<form method="post" th:action="@{/save}">
+<div class="form-group">
+			<label for="nom">Nom</label>
+			<input name="nom" type="text" class="form-control" id="nom" 
+				placeholder="Enter nom">
+		</div>
+		<div class="form-group">
+			<label for="age">Age</label>
+			<input name="age" type="text" class="form-control" id="age" 
+				placeholder="Enter Age">
+		</div>
+		
+		</div>
+			<div class="form-group">
+			<label for="email">Email</label>
+			<input name="email" type="text" class="form-control" id="email" 
+				placeholder="Enter Email">
+		</div>		
+		<div class="form-group">
+			<label for="adr">Adresse</label>
+			<input name="adr" type="text" class="form-control" id="adr" 
+				placeholder="Enter Adresse">
+		</div>	
+	<div class="form-group">
+			<label for="tel">Tel°</label>
+			<input name="tel" type="text" class="form-control" id="tel" 
+				placeholder="Enter Num Tel">
+		<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<Metq chqrset="utf-_"/8>
+</head>
+<body>
+<h1 align="center">Ma Premiére View</h1>
+
+<h2 th:text="${name}"></h2>
+
+<h3 th:text="${myUniversity}"></h3>
+
+<h3 th:text="${myEmail}"></h3>
+
+<h3 th:text="${myTel}"></h3>
+
+<h4 align="center">Liste des modules</h4>
+<ul>
+ <li th:each="c : ${cours}" th:text="${c}">
+ </li>
+</ul>
+</body>
+</html>
